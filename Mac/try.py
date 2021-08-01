@@ -15,7 +15,7 @@ headers = {'Authorization': 'Bearer ' + access_token}
 
 #LINE Notifyにメッセージと画像を送信
 message = 'ゴリラの写真'
-image = 'win2.jpg'  # png or jpg
+image = 'seta.jpeg'  # png or jpg
 payload = {'message': message}
 files = {'imageFile': open(image, 'rb')}
 r = requests.post(url, headers=headers, params=payload, files=files,)
